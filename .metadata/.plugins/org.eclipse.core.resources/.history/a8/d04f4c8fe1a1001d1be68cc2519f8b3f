@@ -1,0 +1,5 @@
+package com.de.dto;
+
+public class MemberDTO {
+	
+}

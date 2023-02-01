@@ -1,0 +1,45 @@
+package com.de.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class MemberDAO {
+	Connection conn;
+	PreparedStatement pstm;
+	ResultSet rs;
+	
+	public boolean join(UserBean user) {
+		boolean result = false;
+		String sql = "INSERT INTO member values(?, ?, ?, 0)";
+		int count = 0;
+		
+		try {
+			conn = DBConnection.getConnection();
+			pstm = conn.prepareStatement(sql);
+			
+			pstm.setString(1, user.getId());
+			pstm.setString(2, user.getPw());
+			pstm.setString(3, user.getName());
+			//데이터 조작어가 실행된 건수 int로 반환
+			count = pstm.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		if(count != 0) {
+			System.out.println("회원가입 성공");
+			result = true;
+		}else {
+			System.out.println("회원가입 실패");
+			result = false;
+		}
+		return result;
+	}	
+
+	
+}

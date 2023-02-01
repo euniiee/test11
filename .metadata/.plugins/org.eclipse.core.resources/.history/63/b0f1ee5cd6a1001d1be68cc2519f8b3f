@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<div>
+		<h1>메인페이지</h1>
+		<div>
+			<div>다은님, 안녕하세요!</div>
+			<input value="로그아웃">
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<style>
+	
+</style>
+</head>
+<body>
+	<div>
+		<h1>로그인</h1>
+		ID: <input type="text" class="id" name="id"><br/>
+		PW: <input type="password" class="pw" name="pw"><br/>
+		<input type="button" value="로그인"><br/>
+		<input type="button" value="회원가입"><br/>
+	</div>
+</body>
+</html>
